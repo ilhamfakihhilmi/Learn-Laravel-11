@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class HaloController extends Controller
 {
     public function coba()
+
     {
-        return view(view: 'coba.halo');
+        $nama = 'Joko';
+        $data = ['namaJoko' => $nama];
+        return view('coba.halo', $data);
     }
 }
