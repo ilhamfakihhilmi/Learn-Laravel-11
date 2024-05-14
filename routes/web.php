@@ -11,5 +11,5 @@ Route::get('/', function () {
 Route::get('/halo', [HaloController::class, 'coba']);
 
 
-Route::get('/todo', [TodoController::class, 'index']);
-Route::post('/todo', [TodoController::class, 'store']);
+Route::get('/todo', [TodoController::class, 'index'])->name('todo');
+Route::post('/todo', [TodoController::class, 'store'])->name('todo.post');
